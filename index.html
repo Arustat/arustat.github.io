@@ -9,9 +9,7 @@
 </head>
 <body>
   <div class="background">
-    <video autoplay loop muted plays-inline>
-      <source src="asset/Background Super Mario Bros.mp4" type="video/mp4">
-    </video>
+    <canvas id="canvas1"></canvas>
     <div class="bouton">
       <h1>Le Portfolio de Mayssa</h1>
       <div>
@@ -21,32 +19,15 @@
     </div>
   </div>
   <script>
-    let button = document.getElementById('button');
-    let mario = document.querySelector('.mario');
-
-    // Show Mario on button hover and hide on mouseout
-    button.addEventListener('mouseover', function() {
-      mario.style.display = "block";
-    });
-
-    button.addEventListener('mouseout', function() {
-      mario.style.display = "none";
-    });
-
     
     button.addEventListener('click', function() {
-      mario.classList.add('jump'); 
-      setTimeout('RedirectionJavascript()',1000);
-      setTimeout(function() {
-        mario.classList.remove('jump'); 
-      }, 1000); 
+      setTimeout('RedirectionJavascript()',1);
     });
 
     function RedirectionJavascript(){
       document.location.href="asset/pages/loding.html";
     }
-
   </script>
+  <script src="asset/js/parallax_background.js"></script>
 </body>
 </html>
-k

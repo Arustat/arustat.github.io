@@ -1,46 +1,41 @@
 body{
-    background-color: rgba(99, 213, 175, 0.871);
-}
-
-h1{
-    font-size: 100px;
-    text-shadow: -1px -1px #eee, 1px 1px #888, -3px 0 4px #000;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #000000;
-    padding: 16px;
-    font-weight: lighter;
-    text-align: center;
-    display: inline;
-    line-height: 100px;
-
-}
-
-ul {
-    list-style-type: none;
-    margin: 50;
+    background-color: #487eb0;
+    margin: 0;
     padding: 0;
-    width: 500px;
-    background-color: #888;
 }
-
-li a{
-    display: block;
-    color: #000;
-    font-size: medium;
-    padding: 16px 18px;
-    text-decoration: none;
+nav{
+    background: #fff;
+    margin-left: 30%;
+    margin-right: 30%;
+    position: fixed;
+    bottom: 0;
+    border-radius: 3%;
 }
-
-li a:hover{
-    background-color: #555;
-    color: white;
+ul{
+    display: inline-block;
 }
-
-.container{
-    display : flex;
-    justify-content: center;
-    align-items: center;
+li{
+    font-family: Roboto;
+    font-weight: bold;
+    letter-spacing: 3px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: color 0.5s, background-color 0.5s, transform 0.5s;
 }
-
-
-
+li .underline{
+    height: 1px;
+    margin-top: 10px;
+    background-color: pink;
+}
+li:hover{
+    background-color: rgb(156, 156, 156);
+    border-radius: 5px;
+    color: #fff;
+    transform: scale(1.05);
+}
+li:hover .underline{
+    background-color: rgb(241, 201, 208);
+    height: 3px;
+}
