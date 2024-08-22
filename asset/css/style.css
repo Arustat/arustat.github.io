@@ -48,6 +48,7 @@ canvas#canvas1 {
   }
   
   button {
+    position: relative;
     width: 200px;
     padding: 15px;
     margin: 20px 5px;
@@ -67,5 +68,13 @@ canvas#canvas1 {
   
   button:hover {
     color: white;
+  }
+
+  #stars {
+    display: none;
+    position: relative;
+    top: -20px;
+    right: -20px; 
+    width: 30px; 
   }
   
