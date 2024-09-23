@@ -1,7 +1,4 @@
 document.write(`
-    <section><h1>Custom Cursor</h1>
-    <a href="#">Hover Me</a>
-    </section>
     <div class="cursor"></div>
     <div class="cursor2"></div>
   `);
