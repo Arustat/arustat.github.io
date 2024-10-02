@@ -1,7 +1,7 @@
 const canvas = document.getElementById("canvas1");
 const ctx = canvas.getContext("2d");
-const CANVAS_WIDTH = canvas.width = 600;
-const CANVAS_HEIGHT = canvas.height = 600; 
+const CANVAS_WIDTH = canvas.width = 640;
+const CANVAS_HEIGHT = canvas.height = 166; 
 let gameSpeed = 4;
 
 const backgroudLayer1 = new Image();
@@ -25,8 +25,8 @@ window.addEventListener('load', function(){
         constructor(image, speedModifier) {
             this.x = 0;
             this.y = 0;
-            this.width = 2400;
-            this.height = 700;
+            this.width = 630;
+            this.height = 200;
             this.image = image;
             this.speedModifier = speedModifier;
             this.speed = gameSpeed * this.speedModifier;
