@@ -7,8 +7,8 @@ body {
 
 body {
   height: 100%;
-  background-image: url("../img/mario.gif"), url("../img/ground.png"), url("../img/bushes.png"), url("../img/back.png");
-  background-color: #00117A;
+  background-image: url("/img/mario.gif"), url("/img/ground.png"), url("/img/bushes.png"), url("/img/back.png");
+  background-color: #baa271;
   background-repeat: no-repeat, repeat-x, repeat-x, repeat-x;
   background-position: left 30% bottom 22px, left 0 bottom 0, left 0 bottom 22px, left 0 bottom 0;
   animation: back 15s infinite linear;
