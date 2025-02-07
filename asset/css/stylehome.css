@@ -238,3 +238,54 @@ a {
   margin-top: 5%;
   margin-left: 5%;
 }
+/* Style du h1 pour la section accueil */
+.accueil h1.hi {
+  font-size: 48px;          /* Taille du texte */
+  color: #333;              /* Couleur du texte */
+  text-transform: uppercase;/* Transformation en majuscules */
+  letter-spacing: 2px;      /* Espacement entre les lettres */
+  margin: 0;                /* Pas de marge par défaut */
+  padding: 20px 0;          /* Espacement vertical */
+  font-weight: bold;        /* Texte en gras */
+}
+
+/* On conserve vos styles et animations pour l'effet 3D */
+#word_changer {
+  display: inline-block;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+/* Animation pour faire sortir le texte vers le haut */
+.slideUpOut {
+  animation: slideUpOut 0.6s forwards;
+}
+
+/* Animation pour faire entrer le nouveau texte depuis le bas */
+.slideUpIn {
+  animation: slideUpIn 0.6s forwards;
+}
+
+/* Définition des keyframes pour l'animation de sortie */
+@keyframes slideUpOut {
+  0% {
+    transform: translateY(0) rotateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%) rotateX(90deg);
+    opacity: 0;
+  }
+}
+
+/* Définition des keyframes pour l'animation d'entrée */
+@keyframes slideUpIn {
+  0% {
+    transform: translateY(100%) rotateX(-90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotateX(0);
+    opacity: 1;
+  }
+}
