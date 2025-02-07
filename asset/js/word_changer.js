@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Tableau des salutations à afficher
     const greetings = [
-        "Bonjour",    // Français
-        "Hello",      // Anglais
-        "Hola",       // Espagnol
-        "Ciao",       // Italien
-        "Hallo",      // Allemand
-        "Olá",        // Portugais
-        "こんにちは", // Japonais
-        "你好",       // Chinois
-        "안녕하세요"    // Coréen
+        "Bonjour !",    // Français
+        "Hello !",      // Anglais
+        "Hola !",       // Espagnol
+        "Ciao !",       // Italien
+        "Hallo !",      // Allemand
+        "Olá !",        // Portugais
+        "こんにちは !", // Japonais
+        "你好 !",       // Chinois
+        "안녕하세요 !"    // Coréen
     ];
   
     let currentIndex = 0;
