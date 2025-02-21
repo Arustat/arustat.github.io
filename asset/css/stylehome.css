@@ -289,3 +289,31 @@ a {
     opacity: 1;
   }
 }
+
+.statue {
+  position: relative;
+  z-index: 2;
+  max-width: 350px;
+  filter: brightness(80%) saturate(120%) hue-rotate(-30deg);
+  transition: 0.3s ease-in-out;
+}
+
+/* Effet glitch au hover */
+.statue:hover {
+  animation: glitch 0.5s infinite alternate;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+    filter: drop-shadow(4px 0px 0px red) drop-shadow(-4px 0px 0px blue);
+  }
+  50% {
+    transform: translate(-2px, 2px);
+    filter: drop-shadow(-4px 0px 0px red) drop-shadow(4px 0px 0px blue);
+  }
+  100% {
+    transform: translate(2px, -2px);
+    filter: drop-shadow(4px 0px 0px red) drop-shadow(-4px 0px 0px blue);
+  }
+}
