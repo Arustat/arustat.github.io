@@ -13,7 +13,7 @@ window.onload = function() {
                 redirect('home.html');
             }, 1000); // 1 seconde pour laisser le temps à la transition
 
-        }, 2000); // 2 secondes avant d'afficher le fond noir
+        }, 1000); // 2 secondes avant d'afficher le fond noir
     } else {
         console.error("L'élément .clap_transition n'a pas été trouvé");
     }
