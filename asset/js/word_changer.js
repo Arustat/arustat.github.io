@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM entièrement chargé');
     // Tableau des salutations à afficher
     const greetings = [
         "Bonjour !",    // Français
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // Fonction principale qui lance l'animation de sortie
     function animateWordChanger() {
+      console.log('Lancement de l’animation');
       wordChangerEl.classList.add('slideUpOut');
       wordChangerEl.addEventListener('animationend', handleSlideUpOut);
     }
