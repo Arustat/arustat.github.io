@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 /* ---------------------------- */
-/*       Styles de base (Mobile-first :)))))) */
+/*       Styles de base (Mobile-first) */
 /* ---------------------------- */
 
 body {
@@ -11,7 +11,7 @@ body {
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
   flex-direction: column;
-  justify-content: space-between; 
+  justify-content: space-between;
   overflow: scroll;
 }
 
@@ -140,21 +140,21 @@ a {
   position: fixed;
   width: 50%;
   height: 100%;
-  background-color: rgb(0, 0, 0); 
-  z-index: 1000000; 
-  pointer-events: none; 
+  background-color: rgb(0, 0, 0);
+  z-index: 1000000;
+  pointer-events: none;
 }
 
 .right_start {
   top: 0;
   right: 0;
-  transform-origin: right; 
+  transform-origin: right;
 }
 
 .left_start {
   top: 0;
   left: 0;
-  transform-origin: left; 
+  transform-origin: left;
 }
 
 @keyframes clap {
@@ -214,7 +214,7 @@ section {
 }
 
 /* ---------------------------- */
-/*     Adaptations Mobile-first On dit merci CHAT GPT pour les commentaires */
+/*     Adaptations Mobile-first */
 /* ---------------------------- */
 
 /* Section d'accueil (texte) : sur mobile, on le laisse en position relative et centré */
@@ -293,9 +293,6 @@ section {
   }
 }
 
-
-
-
 /* ---------------------------- */
 /*     Styles pour écran large */
 /* ---------------------------- */
@@ -327,23 +324,26 @@ section {
   .statue {
     max-width: 350px;
   }
+
   .nav-links {
     padding: 20px 15px;  /* Rétablissement du padding initial */
     width: auto;
     max-width: none;
   }
+
   .nav-links li {
     margin: 0 10px;
     flex: none;
     text-align: left;
   }
+
   .nav-links li a {
     font-size: 20px;
     padding: 6px 0;
   }
 }
 
-
+/* Animations de transition */
 .slideUpOut {
   animation: slideUpOut 0.6s forwards;
 }
@@ -373,7 +373,6 @@ section {
     opacity: 1;
   }
 }
-
 
 /* ===== SECTION "À PROPOS" - Mobile-First ===== */
 #about {
@@ -441,29 +440,82 @@ section {
 /* ===== RESPONSIVE DESIGN - TABLETTE ET PLUS GRAND (768px et +) ===== */
 @media (min-width: 768px) {
   .about-container {
-      flex-direction: row;  /* Affichage en ligne */
-      align-items: center;
-      text-align: left;
+    flex-direction: row;  /* Affichage en ligne */
+    align-items: center;
+    text-align: left;
   }
 
   .profile-pic {
-      width: 150px;  /* Agrandissement de l’image */
-      height: 150px;
-      margin-right: 20px;
-      margin-bottom: 0;
+    width: 150px;  /* Agrandissement de l’image */
+    height: 150px;
+    margin-right: 20px;
+    margin-bottom: 0;
   }
 
   .about-text {
-      text-align: left;
+    text-align: left;
   }
 
   .about-text p {
-      font-size: 1.1em;
-      line-height: 1.6;
+    font-size: 1.1em;
+    line-height: 1.6;
   }
 
   .contact-button {
-      font-size: 1em;
-      padding: 10px 20px;
+    font-size: 1em;
+    padding: 10px 20px;
   }
+}
+
+/* ===== SECTION "CERTIFICATIONS" ===== */
+.certifications {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 40px 5%;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.certifications-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.certification {
+  background: #222;
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.skill {
+  background: #56b2be;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+.skill:hover {
+  transform: scale(1.1);
 }
