@@ -51,18 +51,39 @@
                 </div>
             </div>
         </section>                
-
-        <section id="certifications" class="certifications">
-            <h2 class="section-title">Certifications </h2>
-            <div class="certifications-container">
-                <div class="certification">
-                    <h3>Certification 1</h3>
-                    <p>Description de la certification obtenue.</p>
-                </div>
-                <div class="certification">
-                    <h3>Certification 2</h3>
-                    <p>Description de la certification obtenue.</p>
-                </div>
+        <section class="certifications-section" id="certifications">
+                <h2>CERTIFICATIONS OBTENUES</h2>
+                <div class="carousel-wrapper">
+                  <div class="carousel-track">
+                    <div class="certification-card">
+                      <img src="assets/juniper.png" alt="JNCIS-SEC">
+                      <p>JNCIS-SEC - Juniper Networks</p>
+                    </div>
+                    <div class="certification-card">
+                      <img src="assets/cyberark.png" alt="CyberArk PAM">
+                      <p>CyberArk PAM - Certified Delivery Engineer</p>
+                    </div>
+                    <div class="certification-card">
+                        <img src="assets/cyberark.png" alt="CyberArk PAM">
+                        <p>CyberArk PAM - Certified Delivery Engineer</p>
+                    </div>
+                    <div class="certification-card">
+                        <img src="assets/cyberark.png" alt="CyberArk PAM">
+                        <p>CyberArk PAM - Certified Delivery Engineer</p>
+                    </div>
+                    <div class="certification-card">
+                        <img src="assets/cyberark.png" alt="CyberArk PAM">
+                        <p>CyberArk PAM - Certified Delivery Engineer</p>
+                    </div>
+                    <div class="certification-card">
+                        <img src="assets/cyberark.png" alt="CyberArk PAM">
+                        <p>CyberArk PAM - Certified Delivery Engineer</p>
+                    </div>
+                  </div>
+                </div> 
+                <script src="../js/rotation.js"></script>       
+            <div class = "Formations">
+                <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=1985091" style='border:none;'></iframe>
             </div>
             <br>
             <br>
@@ -78,19 +99,73 @@
             </div>
         </section>
 
+        
+        <script>
+            document.querySelectorAll('.certification').forEach(certif => {
+            certif.addEventListener('click', () => {
+                certif.classList.toggle('expanded');
+            });
+            });
+            let index = 0;
+            function rotateCarousel() {
+                const carousel = document.querySelector(".carousel");
+                index = (index + 1) % carousel.children.length;
+                carousel.style.transform = `translateX(-${index * 100}%)`;
+            }
+            setInterval(rotateCarousel, 3000);
+        </script>
+
+
         <section id="projects">
             <h2>Projets</h2>
             <p>Quelques projets réalisés avec description.</p>
+            <div class="projects-container">
+                <div class="project">
+                    <h3>BlueSentinel</h3>
+                    <p>Un système de détection d’intrusion basé sur l’analyse de logs en temps réel avec ELK Stack. Intégration de règles personnalisées pour détecter des attaques courantes.</p>
+                </div>
+                <div class="project">
+                    <h3>CryptoLock Analyzer</h3>
+                    <p>Outil développé en Python pour analyser des dumps mémoire chiffrés et tenter d’extraire des clés de chiffrement ou de détection de ransomwares connus.</p>
+                </div>
+                <div class="project">
+                    <h3>SecuForm</h3>
+                    <p>Application web développée avec React & Spring Boot pour la gestion sécurisée des formulaires d’accès réseau. Implémentation d’une authentification 2FA.</p>
+                </div>
+            </div>
         </section>
 
         <section id="experience">
             <h2>Expérience</h2>
-            <p>Mon expérience professionnelle et académique.</p>
+            <div class="experience-container">
+                <div class="experience">
+                    <h3>Stagiaire Analyste SOC - CyberSecure Inc.</h3>
+                    <p>Juin 2024 - Août 2024</p>
+                    <ul>
+                        <li>Surveillance des alertes via SIEM (Splunk, ELK)</li>
+                        <li>Rédaction de procédures de réponse à incident</li>
+                        <li>Participation à des analyses post-incident</li>
+                    </ul>
+                </div>
+                <div class="experience">
+                    <h3>Projet Étudiant - Ynov Campus</h3>
+                    <p>Septembre 2023 - Décembre 2023</p>
+                    <ul>
+                        <li>Élaboration d’une architecture sécurisée pour un serveur web</li>
+                        <li>Simulation d’attaques (DoS, MITM) et mise en place de contre-mesures</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section id="contact">
             <h2>Contact</h2>
-            <p>Informations pour me contacter.</p>
+            <div class="contact-container">
+                <p><strong>Email :</strong> mayssa.hamdaoui@proton.me</p>
+                <p><strong>Téléphone :</strong> +33 6 12 34 56 78</p>
+                <p><strong>LinkedIn :</strong> <a href="https://linkedin.com/in/mayssahamdaoui" target="_blank">linkedin.com/in/mayssahamdaoui</a></p>
+                <p><strong>Github :</strong> <a href="https://github.com/mayssah" target="_blank">github.com/mayssah</a></p>
+            </div>
         </section>
 
 
